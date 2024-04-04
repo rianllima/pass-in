@@ -17,6 +17,7 @@ public class Event {
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
+
     @Column(nullable = false)
     private String title;
 
