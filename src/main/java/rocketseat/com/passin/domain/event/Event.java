@@ -1,6 +1,12 @@
 package rocketseat.com.passin.domain.event;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,7 +33,7 @@ public class Event {
     @Column(nullable = false, unique = true)
     private String slug;
 
-    @Column(nullable = false, name = "maximum_attendees")
+    @Column(nullable = false, name="maximum_attendees")
     private Integer maximumAttendees;
 }
 
